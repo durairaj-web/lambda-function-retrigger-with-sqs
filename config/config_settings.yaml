@@ -1,0 +1,9 @@
+global:
+  RUNNING_ENV: local
+
+local:
+  DATABASE_HOST: localhost
+  DATABASE_UID: root
+  DATABASE_PWD: admin
+  DATABASE_NAME: crud
+  DATABASE_PORT: 3306
