@@ -1,8 +1,6 @@
 import copy
 import json
-from datetime import datetime, timedelta
 
-from config.dynaconf import settings
 from services.logger import logger_debug, logger_error
 from constants import exception, messages
 from services.utils import insert_user

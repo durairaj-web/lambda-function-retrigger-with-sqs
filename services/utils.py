@@ -27,7 +27,7 @@ def insert_user(data, id=''):
 
     if id == '':
         logger_debug(f"Inserting user details #{data}")
-        query = INSERT_USER_QUERY.format(fieldnames, values)
+        query = INSERT_USER_QUERY.format(fieldnames[:-2], values[:-2])
     else:
         logger_debug(f"Updating user details id #{id}")
         query = UPDATE_USER_QUERY.format(update_sub_query[:-2], id)
